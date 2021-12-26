@@ -32,7 +32,8 @@ add_subdirectory(./arithmetic)
 add_subdirectory(./prompt)
 add_subdirectory(./calculator)
 target_link_libraries(${ProjectName} Calculator)
-
+target_link_libraries(${ProjectName} Arithmetic)
+target_link_libraries(${ProjectName} Prompt)
 
 # Add test module
 enable_testing()

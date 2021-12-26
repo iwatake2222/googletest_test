@@ -22,8 +22,8 @@ limitations under the License.
 #include <string>
 #include <stdexcept>
 
-#include "i_arithmetic.h"
-#include "i_prompt.h"
+#include "arithmetic/i_arithmetic.h"
+#include "prompt/i_prompt.h"
 
 #include "calculator.h"
 

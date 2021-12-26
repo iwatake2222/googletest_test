@@ -10,7 +10,4 @@ target_sources(${LibraryName} PRIVATE
     Calculator.h Calculator.cpp
 )
 target_include_directories(${LibraryName} PUBLIC ./)    # add public so that test module can include header files
-
-# Add sub modules
-target_link_libraries(${LibraryName} Arithmetic)
-target_link_libraries(${LibraryName} Prompt)
+target_include_directories(${LibraryName} PUBLIC ${CMAKE_SOURCE_DIR})
