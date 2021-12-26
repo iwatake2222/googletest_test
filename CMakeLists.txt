@@ -3,7 +3,6 @@ cmake_minimum_required(VERSION 3.14)
 # Create project
 set(ProjectName "main")
 project(${ProjectName})
-enable_testing()
 
 # Create executable file
 add_executable(${ProjectName})
@@ -36,4 +35,5 @@ target_link_libraries(${ProjectName} Calculator)
 
 
 # Add test module
+enable_testing()
 add_subdirectory(./test)
