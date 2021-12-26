@@ -4,9 +4,9 @@
 ## Class Diagram
 ### For product
 - To test core logic and input/output, make `Arithmetic` and `Prompt` module, respectively
-- `Calculator` module contain these modules
-- However, `Calculator` doesn't create these modules. Instead, use dependency injection
-    - It's better to create a factory module, but in this project main function creates these modules to make it easy
+- `Calculator` module contains these modules
+- However, `Calculator` module doesn't create these modules. Instead, use dependency injection
+    - It's better to have a factory module, but in this project main function creates these modules to make it easy
 - So that, I can use mock modules when running unit test for `Calculator` module
 
 ![](00_doc/class_diagram.jpg)
