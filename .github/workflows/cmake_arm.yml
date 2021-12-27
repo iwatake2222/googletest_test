@@ -1,0 +1,37 @@
+name: CMake_ARM
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+env:
+  BUILD_TYPE: Release
+
+jobs:
+  build:
+    timeout-minutes: 10
+    runs-on: ubuntu-18.04
+    strategy:
+      matrix:
+        include:
+          - arch: armv7
+            distro: ubuntu18.04
+          - arch: aarch64
+            distro: ubuntu18.04
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Checkout submodules
+      run: git submodule update --init --recursive --recommend-shallow --depth 1
+
+    - uses: uraimo/run-on-arch-action@v2.0.5
+      name: Build
+      id: build
+      with:
+        arch: ${{ matrix.arch }}
+        distro: ${{ matrix.distro }}
+        run: |
+          uname -a
