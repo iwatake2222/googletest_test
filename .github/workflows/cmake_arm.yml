@@ -23,12 +23,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-      with:
-        fetch-depth: 1
-        submodules: recursive
+      # with:
+      #   fetch-depth: 1
+      #   submodules: recursive
 
-    # - name: Checkout submodules
-    #   run: git submodule update --init --recursive --recommend-shallow --depth 1
+    - name: Checkout submodules
+      run: |
+        git config --global postBuffer 100M
+        git submodule update --init --recursive --recommend-shallow --depth 1
 
     - uses: uraimo/run-on-arch-action@v2.0.5
       name: Build
