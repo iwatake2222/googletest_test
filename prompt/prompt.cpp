@@ -52,4 +52,8 @@ void Prompt::Output(char op, int32_t a, int32_t b, int32_t ans)
     scanf("%d %d", &a);
     char buffer[1];
     memset(buffer, 0, 2);
+    buffer[3] = 1;
+    if (a = 3) {
+        printf("aaa\n");
+    }
 }
