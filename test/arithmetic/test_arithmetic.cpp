@@ -62,7 +62,7 @@ TEST_F(TestArithmetic, BasicTest)
 TEST_F(TestArithmetic, Add)
 {
     Arithmetic arithmetic;
-    EXPECT_EQ(0, arithmetic.Calc('+', 0, 1));
+    EXPECT_EQ(0, arithmetic.Calc('+', 0, 0));
     EXPECT_EQ(1, arithmetic.Calc('+', 0, 1));
     EXPECT_EQ(1, arithmetic.Calc('+', 1, 0));
     EXPECT_EQ(-1, arithmetic.Calc('+', 0, -1));
