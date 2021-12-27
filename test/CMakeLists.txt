@@ -10,6 +10,9 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 include(GoogleTest)
 
+# Compile option (re-do this, because GoogleTest seems to set CMAKE_CXX_STANDARD to 11)
+include(${CMAKE_SOURCE_DIR}/cmakes/compile_option.cmake)
+
 # Add test modules
 add_subdirectory(./arithmetic)
 add_subdirectory(./prompt)
