@@ -23,6 +23,7 @@ jobs:
       #   fetch-depth: 1
       #   submodules: recursive
 
+    # To avoid "RPC failed; curl 56 GnuTLS recv error (-54): Error in the pull function."
     - name: Checkout submodules
       run: |
         git config --global http.postBuffer 100M
