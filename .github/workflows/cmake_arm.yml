@@ -34,13 +34,12 @@ jobs:
         arch: ${{ matrix.arch }}
         distro: ${{ matrix.distro }}
         shell: /bin/sh
-        install:
-          apt-get update -q -y
-          apt-get install -q -y git build-essential cmake
         run: |
           uname -a
           pwd
           ls
+          apt-get update -q -y
+          apt-get install -q -y git build-essential cmake
           mkdir -p build
           cd build
           cmake ..
