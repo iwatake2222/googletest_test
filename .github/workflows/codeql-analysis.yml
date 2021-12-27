@@ -63,9 +63,11 @@ jobs:
     #    uses a compiled language
 
     - run: |
+       git config --global http.postBuffer 100M
+       git submodule update --init --recursive --recommend-shallow --depth 1
        mkdir -p build
        cd build
-       cmake
+       cmake ..
        make
 
     - name: Perform CodeQL Analysis
