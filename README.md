@@ -1,6 +1,8 @@
 # Sample project for GoogleTest
 - Create a simple calculator with GoogleTest
 
+[![CMake](https://github.com/iwatake2222/googletest_test/actions/workflows/cmake.yml/badge.svg)](https://github.com/iwatake2222/googletest_test/actions/workflows/cmake.yml)
+
 ## Class Diagram
 ### For product
 - To test core logic and input/output, make `Arithmetic` and `Prompt` module, respectively
