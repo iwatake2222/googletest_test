@@ -20,4 +20,16 @@ assignees: ''
 A clear and concise description of this new feature or the solution for the problem
 
 ## **HOW** to achieve this new feature
-If you already have an idea of how this new feature could be implemented, describe it here
+- If you already have an idea of how this new feature could be implemented, describe it here
+- Add task list to complete this new feature
+- [ ] TASK1
+- [ ] TASK2
+- [ ] TASK3
+
+## Related issues
+- Parent issue
+    - Add a parent issue number if exists (e.g.  \#1234)
+- Related issue
+    - Add related issue number if exists (e.g.  \#1234)
+
+# Additional context
