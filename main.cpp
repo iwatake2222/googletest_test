@@ -16,7 +16,6 @@ limitations under the License.
 /* for general */
 #include <cstdint>
 #include <cstdio>
-#include <cstring>
 #include <iostream>
 #include <memory>
 #include <vector>
