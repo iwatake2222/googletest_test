@@ -2,7 +2,8 @@
 - Create a simple calculator with GoogleTest
 
 ## CI Status
-[![CMake](https://github.com/iwatake2222/googletest_test/actions/workflows/cmake.yml/badge.svg)](https://github.com/iwatake2222/googletest_test/actions/workflows/cmake.yml)
+[![CMake_x64](https://github.com/iwatake2222/googletest_test/actions/workflows/cmake_x64.yml/badge.svg)](https://github.com/iwatake2222/googletest_test/actions/workflows/cmake_x64.yml)
+[![CMake_ARM](https://github.com/iwatake2222/googletest_test/actions/workflows/cmake_arm.yml/badge.svg)](https://github.com/iwatake2222/googletest_test/actions/workflows/cmake_arm.yml)
 
 
 ## Class Diagram
