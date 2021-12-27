@@ -1,7 +1,7 @@
 ---
-name: Bug report
+name: Issue report
 about: Create a report to help us improve
-title: "[BUG] "
+title: "[ISSUE] "
 labels: ''
 assignees: ''
 
@@ -12,8 +12,8 @@ assignees: ''
 - Delete this section and explanation text in each section after you write your description
 - Consider to use code blocks ( \` \` , \`\`\`  \`\`\` )
 
-## Describe the bug
-A clear and concise description of what the bug is.
+## Describe the issue
+A clear and concise description of what the issue is.
 
 ## Expected behavior
 A clear and concise description of what you expected to happen.
