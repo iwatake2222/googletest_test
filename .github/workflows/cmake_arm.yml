@@ -34,12 +34,26 @@ jobs:
         arch: ${{ matrix.arch }}
         distro: ${{ matrix.distro }}
         shell: /bin/sh
+        install: |
+          case "${{ matrix.distro }}" in
+            ubuntu*|jessie|stretch|buster|bullseye)
+              apt-get update -q -y
+              apt-get install -q -y git build-essential cmake
+              ;;
+            fedora*)
+              dnf -y update
+              dnf -y install git which
+              ;;
+            alpine*)
+              apk update
+              apk add git
+              ;;
+          esac
+
         run: |
           uname -a
           pwd
           ls
-          apt-get update -q -y
-          apt-get install -q -y git build-essential cmake
           mkdir -p build
           cd build
           cmake ..
