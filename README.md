@@ -56,3 +56,13 @@ ctest
 
 ![](00_doc/test_in_vs.jpg)
 
+
+# License
+- gtest_test
+- https://github.com/iwatake2222/gtest_test
+- Copyright 2021 iwatake2222
+- [Licensed under the Apache License, Version 2.0](LICENSE)
+
+# Acknowledgements
+- This project utilizes OSS (Open Source Software)
+    - [NOTICE.md](NOTICE.md)
