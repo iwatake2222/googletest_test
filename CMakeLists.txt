@@ -4,12 +4,12 @@ cmake_minimum_required(VERSION 3.14)
 set(ProjectName "main")
 project(${ProjectName})
 
-# Create executable file
-add_executable(${ProjectName})
-
 # Compile option
 set(CMAKE_INSTALL_PREFIX "./install" CACHE STRING "install path" FORCE)
 include(${CMAKE_SOURCE_DIR}/cmakes/compile_option.cmake)
+
+# Create executable file
+add_executable(${ProjectName})
 
 # Add source
 target_sources(${ProjectName} PRIVATE 
