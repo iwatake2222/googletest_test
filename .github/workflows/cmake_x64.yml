@@ -25,7 +25,7 @@ jobs:
 
     - name: Checkout submodules
       run: |
-        git config --global postBuffer 100M
+        git config --global http.postBuffer 100M
         git submodule update --init --recursive --recommend-shallow --depth 1
 
     - name: Configure CMake
