@@ -1,7 +1,7 @@
 # Sample project for GoogleTest
 - Create a simple calculator with GoogleTest
 
-## Build Status
+## CI Status
 [![CMake](https://github.com/iwatake2222/googletest_test/actions/workflows/cmake.yml/badge.svg)](https://github.com/iwatake2222/googletest_test/actions/workflows/cmake.yml)
 
 
