@@ -41,5 +41,9 @@ int main(int argc, char* argv[])
     int32_t a;
     scanf("%d %d", &a);
 
+    char buf[4];
+    memset(buf, 0, 10);
+    printf("%s\n", buf);
+
     return 0;
 }
