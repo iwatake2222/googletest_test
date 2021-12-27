@@ -37,5 +37,9 @@ int main(int argc, char* argv[])
     Calculator calc(std::make_unique<Arithmetic>(), std::make_unique<Prompt>());
     calc.Run();
 
+    /* Cause security warning */
+    char buffer[1];
+    buffer[3] = 1;
+
     return 0;
 }

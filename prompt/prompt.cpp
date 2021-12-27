@@ -44,16 +44,8 @@ void Prompt::Input(char& op, int32_t& a, int32_t& b)
     std::cout << ">";
     std::cin >> op >> a >> b;
 }
-#include <cstring>
+
 void Prompt::Output(char op, int32_t a, int32_t b, int32_t ans)
 {
     std::cout << std::to_string(a) + " " + op + " " + std::to_string(b) + " = " + std::to_string(ans);
-
-    scanf("%d %d", &a);
-    char buffer[1];
-    memset(buffer, 0, 2);
-    buffer[3] = 1;
-    if (a = 3) {
-        printf("aaa\n");
-    }
 }
