@@ -1,5 +1,6 @@
 # Sample project for GoogleTest
 - Create a simple calculator with GoogleTest
+- Continuous Integration with GitHub Actions
 
 ## CI Status
 Status | Build Type
