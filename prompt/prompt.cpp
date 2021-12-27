@@ -16,6 +16,7 @@ limitations under the License.
 /* for general */
 #include <cstdint>
 #include <cstdio>
+#include <cstring>
 #include <vector>
 #include <array>
 #include <iostream>
@@ -48,4 +49,12 @@ void Prompt::Input(char& op, int32_t& a, int32_t& b)
 void Prompt::Output(char op, int32_t a, int32_t b, int32_t ans)
 {
     std::cout << std::to_string(a) + " " + op + " " + std::to_string(b) + " = " + std::to_string(ans);
+
+
+        int32_t a;
+    scanf("%d %d", &a);
+
+    char buf[4];
+    memset(buf, 0, 10);
+    printf("%s\n", buf);
 }
