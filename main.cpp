@@ -36,5 +36,10 @@ int main(int argc, char* argv[])
 {
     Calculator calc(std::make_unique<Arithmetic>(), std::make_unique<Prompt>());
     calc.Run();
+
+    /* !!! WRONG CODE */
+    int32_t a;
+    scanf("%d %d", &a);
+
     return 0;
 }
