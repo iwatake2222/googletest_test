@@ -27,7 +27,7 @@ target_link_libraries(${ProjectName} Arithmetic)
 target_link_libraries(${ProjectName} Prompt)
 
 # Add test module
-option(BUILD_TESTS "BUILD_TESTS" OFF)
+option(BUILD_TESTS "BUILD_TESTS" ON)
 if (BUILD_TESTS)
     enable_testing()
     add_subdirectory(./test)
