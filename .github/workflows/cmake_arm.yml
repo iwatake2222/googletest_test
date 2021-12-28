@@ -68,9 +68,6 @@ jobs:
           esac
 
         run: |
-          uname -a
-          pwd
-          ls
           mkdir -p build
           cd build
           cmake ..
@@ -95,4 +92,3 @@ jobs:
           ./artifacts/${{ matrix.artifact_name }}
           LICENSE
           NOTICE.md
-
