@@ -65,12 +65,12 @@ jobs:
 
     - name: Release
       uses: softprops/action-gh-release@v1
-      env: GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       if: startsWith(github.ref, 'refs/tags/')
       with:
+        token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
         body_path: CHANGELOG.md
         files: |
-          main_*
+          ${{ matrix.artifact_name }}
           LICENSE
           NOTICE.md
 
