@@ -55,7 +55,7 @@ jobs:
           case "${{ matrix.distro }}" in
             ubuntu*|jessie|stretch|buster|bullseye)
               apt-get update -q -y
-              apt-get install -q -y git build-essential cmake
+              apt-get install -q -y git g++ cmake
               ;;
             fedora*)
               dnf -y update
@@ -83,7 +83,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: ${{ matrix.artifact_name }}
-        path: ${PWD}/artifacts/${{ matrix.artifact_name }}
+        path: ./artifacts/${{ matrix.artifact_name }}
 
     - name: Release
       uses: softprops/action-gh-release@v1
@@ -92,7 +92,7 @@ jobs:
         token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
         body_path: CHANGELOG.md
         files: |
-          ${PWD}/artifacts/${{ matrix.artifact_name }}
+          ./artifacts/${{ matrix.artifact_name }}
           LICENSE
           NOTICE.md
 
