@@ -86,7 +86,6 @@ jobs:
       uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
       with:
-        token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
         body_path: CHANGELOG.md
         files: |
           ./artifacts/${{ matrix.artifact_name }}
