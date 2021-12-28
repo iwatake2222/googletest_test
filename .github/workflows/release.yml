@@ -5,7 +5,7 @@ name: Release
 #     tags: '*'
 on:
   push:
-    branches: [ master ]
+    # branches: [ master ]
     tags: '*'
 
 env:
@@ -47,12 +47,12 @@ jobs:
       if: startsWith(github.ref, 'refs/tags/')
       shell: bash
       run: |
-        ls build
+        ls  ${{github.workspace}}/build
         if [[ "${{ matrix.os }}" == "windows-latest" ]]
         then
-          7z a ${{ matrix.artifact_name }} ./build/${{ matrix.exe_name }}
+          7z a ${{ matrix.artifact_name }} ./${{github.workspace}}/build/${{ matrix.exe_name }}
         else
-          tar czvf ${{ matrix.artifact_name }} ./build/${{ matrix.exe_name }}
+          tar czvf ${{ matrix.artifact_name }} ./${{github.workspace}}/build/${{ matrix.exe_name }}
         fi
         ls
 
@@ -63,7 +63,7 @@ jobs:
         draft: true
         body_path: CHANGELOG.md
         files: |
-          'main_*'
+          main_*
           LICENSE
           NOTICE.md
 
