@@ -18,7 +18,7 @@ A clear and concise description of what the issue is.
 ## Expected behavior
 A clear and concise description of what you expected to happen.
 
-## Environment (please complete the following information)
+## Environment
  - Hardware: [e.g. PC, Raspberry Pi 4, Jetson Nano]
  - CPU: [e.g. Intel Core i7-11700 2.5GHz]
  - GPU: [e.g. NVIDIA GeForce RTX 3060 Ti]

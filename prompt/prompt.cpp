@@ -42,7 +42,7 @@ Prompt::~Prompt()
 void Prompt::Input(char& op, int32_t& a, int32_t& b)
 {
     std::cout << ">";
-    std::cin >> op >> a >> b;
+    std::cin >> a >> op  >> b;
 }
 
 void Prompt::Output(char op, int32_t a, int32_t b, int32_t ans)
