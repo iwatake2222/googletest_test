@@ -47,10 +47,10 @@ jobs:
       if: startsWith(github.ref, 'refs/tags/')
       shell: bash
       run: |
-        ls  ${{github.workspace}}/build
+        ls  '${{github.workspace}}/build'
         if [[ "${{ matrix.os }}" == "windows-latest" ]]
         then
-          7z a ${{ matrix.artifact_name }} ${{github.workspace}}/build/${{ matrix.exe_name }}
+          7z a ${{ matrix.artifact_name }} '${{github.workspace}}/build/${{ matrix.exe_name }}''
         else
           tar czvf ${{ matrix.artifact_name }} ${{github.workspace}}/build/${{ matrix.exe_name }}
         fi
