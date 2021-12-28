@@ -50,9 +50,9 @@ jobs:
         ls  ${{github.workspace}}/build
         if [[ "${{ matrix.os }}" == "windows-latest" ]]
         then
-          7z a ${{ matrix.artifact_name }} ./${{github.workspace}}/build/${{ matrix.exe_name }}
+          7z a ${{ matrix.artifact_name }} ${{github.workspace}}/build/${{ matrix.exe_name }}
         else
-          tar czvf ${{ matrix.artifact_name }} ./${{github.workspace}}/build/${{ matrix.exe_name }}
+          tar czvf ${{ matrix.artifact_name }} ${{github.workspace}}/build/${{ matrix.exe_name }}
         fi
         ls
 
