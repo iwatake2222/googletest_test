@@ -38,8 +38,8 @@ int main(int argc, char* argv[])
     calc.Run();
 
     /* Cause security warning */
-    char buffer[1];
-    buffer[3] = 1;
+    // char buffer[1];
+    // buffer[3] = 1;
 
     return 0;
 }
